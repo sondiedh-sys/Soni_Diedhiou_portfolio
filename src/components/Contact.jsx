@@ -14,14 +14,14 @@ const Contact = () => {
                         {t.contact.description}
                     </p>
                     <div className={styles.contactDetails} style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', gap: '3rem', flexWrap: 'wrap' }}>
-                        <div className={styles.detailItem} style={{ flexDirection: 'column', textAlign: 'center' }}>
+                        <div className={styles.detailItem} style={{ flexDirection: 'column', textAlign: 'center', alignItems: 'center' }}>
                             <span className={styles.detailIcon} style={{ fontSize: '2rem', marginBottom: '1rem', width: 'auto', height: 'auto', background: 'none' }}>✉️</span>
                             <div>
                                 <span className={styles.detailLabel} style={{ display: 'block', marginBottom: '0.5rem' }}>{t.contact.emailLabel}</span>
                                 <a href="mailto:sondiedh@gmail.com" className={styles.detailLink}>sondiedh@gmail.com</a>
                             </div>
                         </div>
-                        <div className={styles.detailItem} style={{ flexDirection: 'column', textAlign: 'center' }}>
+                        <div className={styles.detailItem} style={{ flexDirection: 'column', textAlign: 'center', alignItems: 'center' }}>
                             <span className={styles.detailIcon} style={{ fontSize: '2rem', marginBottom: '1rem', width: 'auto', height: 'auto', background: 'none' }}>📍</span>
                             <div>
                                 <span className={styles.detailLabel} style={{ display: 'block', marginBottom: '0.5rem' }}>{t.contact.locationLabel}</span>
