@@ -11,6 +11,7 @@ export const translations = {
             description: "Étudiant en deuxième année à l'ENSIIE (Filière Ingénierie Logicielle). Passionné par l'informatique, je me spécialise en cybersécurité pour sécuriser les systèmes de demain.",
             btnProjects: "Voir mes projets",
             btnResume: "Télécharger mon CV",
+            resumePath: "/cv_fr.pdf",
             btnContact: "Me Contacter"
         },
         about: {
@@ -123,6 +124,7 @@ export const translations = {
             description: "Second-year Software Engineering student at ENSIIE. Passionate about computer science, my goal is to specialize in cybersecurity to secure the systems of tomorrow.",
             btnProjects: "View my work",
             btnResume: "Download Resume",
+            resumePath: "/cv_en.pdf",
             btnContact: "Contact Me"
         },
         about: {

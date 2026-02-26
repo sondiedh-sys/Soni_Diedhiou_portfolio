@@ -22,7 +22,7 @@ const Hero = () => {
 
                 <div className={styles.schoolLogos}>
                     <img src="/logo-ensiie.png" alt="ENSIIE Logo" className={styles.schoolLogo} />
-                    <img src="/logo-imt.webp" alt="Institut Mines-Télécom Logo" className={styles.schoolLogo} />
+                    <img src="/logo-imt.png" alt="Institut Mines-Télécom Logo" className={styles.schoolLogo} />
                 </div>
 
                 <p className={styles.subtitle}>
@@ -32,7 +32,7 @@ const Hero = () => {
                     <a href="#projects" className={`${styles.btn} ${styles.btnPrimary} hover-lift`}>
                         {t.hero.btnProjects}
                     </a>
-                    <a href="/CV-SONI-2.pdf" download className={`${styles.btn} ${styles.btnSecondary} hover-lift`}>
+                    <a href={t.hero.resumePath} download className={`${styles.btn} ${styles.btnSecondary} hover-lift`}>
                         {t.hero.btnResume}
                     </a>
                     <a href="#contact" className={`${styles.btn} ${styles.btnSecondary} hover-lift`}>
