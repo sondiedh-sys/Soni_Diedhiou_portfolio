@@ -1,0 +1,10 @@
+/* Component-specific styles will go into CSS Modules, but this can be used for App-level layouts */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
