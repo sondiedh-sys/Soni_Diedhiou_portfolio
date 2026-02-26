@@ -8,7 +8,7 @@ export const translations = {
         hero: {
             role: "Étudiant en Informatique & Sécurité SI",
             greeting: "Bonjour, je suis",
-            description: "Étudiant en deuxième année à l'ENSIIE (École Nationale Supérieure d'Informatique pour l'Industrie et l'Entreprise) en filière Ingénierie Logicielle, passionné par l'informatique et la cybersécurité. Curieux et en plein apprentissage, je cherche constamment à consolider mes bases techniques et à découvrir de nouvelles manières de résoudre des problèmes.",
+            description: "Étudiant en deuxième année à l'ENSIIE (Filière Ingénierie Logicielle). Passionné par l'informatique, je me spécialise en cybersécurité pour sécuriser les systèmes de demain.",
             btnProjects: "Voir mes projets",
             btnResume: "Télécharger mon CV",
             btnContact: "Me Contacter"
@@ -120,7 +120,7 @@ export const translations = {
         hero: {
             role: "Computer Science & IT Security Student",
             greeting: "Hi, I'm",
-            description: "Second-year Software Engineering student at ENSIIE (École Nationale Supérieure d'Informatique pour l'Industrie et l'Entreprise) with a strong interest in cybersecurity. Driven by curiosity and a desire to learn, I'm constantly working to solidify my technical foundations and discover new ways to solve problems.",
+            description: "Second-year Software Engineering student at ENSIIE. Passionate about computer science, my goal is to specialize in cybersecurity to secure the systems of tomorrow.",
             btnProjects: "View my work",
             btnResume: "Download Resume",
             btnContact: "Contact Me"
