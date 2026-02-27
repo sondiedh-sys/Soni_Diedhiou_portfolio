@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import About from './components/About'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -15,9 +16,7 @@ function App() {
         <Projects />
         <Contact />
       </main>
-      <footer style={{ textAlign: 'center', padding: '2rem 0', color: 'var(--text-secondary)', fontSize: '0.875rem' }}>
-        <p>&copy; {new Date().getFullYear()} Soni.dev. All rights reserved.</p>
-      </footer>
+      <Footer />
     </div>
   )
 }

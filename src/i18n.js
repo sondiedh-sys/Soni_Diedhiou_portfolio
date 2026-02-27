@@ -109,6 +109,12 @@ export const translations = {
             emailLabel: "Email",
             locationLabel: "Localisation",
             locationValue: "Île-de-France"
+        },
+        footer: {
+            rights: "Tous droits réservés",
+            builtWith: "Construit avec React & Vite",
+            lastUpdated: "Dernière mise à jour",
+            date: "Février 2026"
         }
     },
     en: {
@@ -221,6 +227,12 @@ export const translations = {
             emailLabel: "Email",
             locationLabel: "Location",
             locationValue: "Île-de-France, France"
+        },
+        footer: {
+            rights: "All rights reserved",
+            builtWith: "Built with React & Vite",
+            lastUpdated: "Last updated",
+            date: "February 2026"
         }
     }
 };
