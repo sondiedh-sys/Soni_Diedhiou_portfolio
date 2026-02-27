@@ -17,7 +17,7 @@ export const translations = {
         about: {
             title: "À propos de",
             subtitle: "Mon parcours et mes compétences techniques.",
-            description1: "Actuellement en deuxième année de cycle ingénieur (filière Ingénierie Logicielle) à l'ENSIIE (École Nationale Supérieure d'Informatique pour l'Industrie et l'Entreprise) après deux ans de classes préparatoires (MPSI puis PSI). Mon objectif est de me construire une carrière en cybersécurité pour contribuer à la sécurité de demain.",
+            description1: "Actuellement en deuxième année de cycle ingénieur à l'ENSIIE (filière Ingénierie Logicielle) après deux ans de classes préparatoires intensives (MPSI puis PSI). Animé par les défis techniques, mon ambition véritable est de forger une carrière en cybersécurité pour devenir l'un des remparts de demain, garantissant l'intégrité et la résilience des systèmes d'information critiques.",
             timelineTitle: "Parcours Académique",
             experienceTitle: "Expérience Professionnelle",
             experiences: [
@@ -129,7 +129,7 @@ export const translations = {
         about: {
             title: "About",
             subtitle: "My background and technical skills.",
-            description1: "Currently in my second year of the Software Engineering program at ENSIIE (École Nationale Supérieure d'Informatique pour l'Industrie et l'Entreprise) after two years of intensive prep classes (MPSI then PSI). My goal is to build a career in cybersecurity to contribute to the security of tomorrow.",
+            description1: "Currently in my second year of the Software Engineering program at ENSIIE following two years of intensive prep classes (MPSI/PSI). Driven by technical challenges, my true ambition is to build a career in cybersecurity—aiming to become part of tomorrow's shield, ensuring the integrity and resilience of critical information systems.",
             timelineTitle: "Academic Background",
             experienceTitle: "Professional Experience",
             experiences: [
