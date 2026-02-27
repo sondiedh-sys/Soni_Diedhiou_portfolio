@@ -17,8 +17,7 @@ export const translations = {
         about: {
             title: "À propos de",
             subtitle: "Mon parcours et mes compétences techniques.",
-            description1: "Actuellement en deuxième année de cycle ingénieur (filière Ingénierie Logicielle) à l'ENSIIE (École Nationale Supérieure d'Informatique pour l'Industrie et l'Entreprise) après deux ans de classes préparatoires (MPSI puis PSI). Mon objectif est d'obtenir le Master SECRETS en double diplôme lors de ma 3ème année afin d'approfondir mes compétences en sécurité IT.",
-            description2: "J'aime résoudre des problèmes complexes, que ce soit en optimisant des algorithmes en OCaml, en développant des applications complètes en Java, ou en automatisant la résolution de CTF sur Root-Me.",
+            description1: "Actuellement en deuxième année de cycle ingénieur (filière Ingénierie Logicielle) à l'ENSIIE (École Nationale Supérieure d'Informatique pour l'Industrie et l'Entreprise) après deux ans de classes préparatoires (MPSI puis PSI). Mon objectif est de me construire une carrière en cybersécurité pour contribuer à la sécurité de demain.",
             timelineTitle: "Parcours Académique",
             experienceTitle: "Expérience Professionnelle",
             experiences: [
@@ -130,8 +129,7 @@ export const translations = {
         about: {
             title: "About",
             subtitle: "My background and technical skills.",
-            description1: "Currently in my second year of the Software Engineering program at ENSIIE (École Nationale Supérieure d'Informatique pour l'Industrie et l'Entreprise) after two years of intensive prep classes (MPSI then PSI). My goal is to pursue a double degree in the specialized SECRETS Master's program for my third year to deepen my cybersecurity skills.",
-            description2: "I enjoy solving complex problems, whether it's optimizing algorithms in OCaml, developing full-stack Java applications, or automating CTF resolutions on Root-Me.",
+            description1: "Currently in my second year of the Software Engineering program at ENSIIE (École Nationale Supérieure d'Informatique pour l'Industrie et l'Entreprise) after two years of intensive prep classes (MPSI then PSI). My goal is to build a career in cybersecurity to contribute to the security of tomorrow.",
             timelineTitle: "Academic Background",
             experienceTitle: "Professional Experience",
             experiences: [

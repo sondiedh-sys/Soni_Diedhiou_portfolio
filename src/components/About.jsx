@@ -12,8 +12,7 @@ const About = () => {
                         {t.about.title} <span className="text-gradient">Soni</span>
                     </h2>
                     <p className={styles.description}>
-                        {t.about.description1}<br /><br />
-                        {t.about.description2}
+                        {t.about.description1}
                     </p>
 
                     <div className={styles.timeline}>
