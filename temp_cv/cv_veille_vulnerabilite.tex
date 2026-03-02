@@ -1,0 +1,117 @@
+\documentclass[10pt, a4paper]{article}
+
+% --- Paquets de base ---
+\usepackage[a4paper, left=1.5cm, right=1.5cm, top=1.5cm, bottom=1.5cm]{geometry}
+\usepackage{fontspec}
+\usepackage[french, bidi=basic, provide=*]{babel}
+\usepackage{xcolor}
+\usepackage{enumitem}
+% \usepackage{hyperref}
+\usepackage{titlesec}
+
+% --- Configuration des polices ---
+\babelprovide[import, onchar=ids fonts]{french}
+\babelprovide[import, onchar=ids fonts]{english}
+\babelfont{rm}{Noto Sans}
+
+% --- Configuration du style ---
+\pagestyle{empty}
+\raggedright
+\definecolor{darkblue}{RGB}{0, 51, 102}
+\setlist[itemize]{leftmargin=*, noitemsep, topsep=2pt}
+
+\titleformat{\section}{\large\bfseries\color{darkblue}\uppercase}{}{0pt}{}[\titlerule]
+\titlespacing{\section}{0pt}{12pt}{8pt}
+
+% --- Début du document ---
+\begin{document}
+
+% --- EN-TÊTE ---
+\begin{center}
+    {\Huge \bfseries SONI DIEDHIOU} \\
+    \vspace{4pt}
+    {\large \bfseries Étudiant en 2ème année - École d'Ingénieur ENSIIE} \\
+    \vspace{6pt}
+    \small
+    sondiedh@gmail.com $|$ 06 88 87 66 21 $|$ Île-de-France \\
+    \vspace{2pt}
+    LinkedIn : soni-diedhiou $|$ 
+    GitHub : sondiedh-sys $|$ 
+    Portfolio : soni-diedhiou-portfolio.vercel.app \\
+    \vspace{4pt}
+    \textit{Étudiant en 2ème année à l'ENSIIE, passionné par l'informatique et la cybersécurité. Recherche d'un stage en outillage et veille en vulnérabilité.}
+\end{center}
+
+% --- FORMATION ---
+\section{Formation}
+\textbf{ENSIIE - École Nationale Supérieure d'Informatique} \hfill \textbf{2024 -- 2027} \\
+Diplôme d'Ingénieur en Informatique et Mathématiques Appliquées \hfill \textit{Évry-Courcouronnes} \\
+Projet de Double Diplôme (3ème année) : \textbf{Master SECRETS} - Sécurité des Systèmes et des Réseaux. \\
+Filière Génie Logiciel. Formation approfondie en développement logiciel et architecture des systèmes. \\
+
+\vspace{4pt}
+\textbf{Asia Pacific University (APU)} \hfill \textbf{2025} \\
+Semestre d'échange académique - Master of Science in Cybersecurity \hfill \textit{Kuala Lumpur, Malaisie} \\
+Cours : Architecture (ISA), Design (ISD), SOC, Menaces Cyber (CST), Network Design Performance (NDP). \\
+
+\vspace{4pt}
+\textbf{Lycée Michelet} \hfill \textbf{2022 -- 2024} \\
+Classe Préparatoire aux Grandes Écoles (CPGE) - Mathématiques, Physique, Informatique \hfill \textit{Vanves} \\
+
+\vspace{4pt}
+\textbf{Lycée des Sept Mares} \hfill \textbf{2022} \\
+Baccalauréat Général - \textbf{Mention Très Bien} \hfill \textit{Maurepas}
+
+% --- EXPÉRIENCE PROFESSIONNELLE ---
+\section{Expérience Professionnelle}
+
+\textbf{Conservatoire National des Arts et Métiers (CNAM)} \hfill \textbf{Juin -- Juillet 2025} \\
+\textit{Stagiaire en Développement Web et Statistiques} \\
+Lien du projet : sondiedh.pythonanywhere.com
+\begin{itemize}
+    \item Conception d'outils de visualisation de données statistiques.
+    \item Stack technique : Python (Flask), HTML/CSS.
+\end{itemize}
+
+\vspace{6pt}
+
+\textbf{Auchan} \hfill \textbf{Depuis 2024} \\
+\textit{Employé polyvalent (CDI à temps partiel) - Rayon Fruits et Légumes}
+\begin{itemize}
+    \item Gestion des stocks, organisation des rayons et réception des livraisons.
+    \item Développement de la rigueur et de l'organisation en milieu professionnel.
+\end{itemize}
+
+% --- PROJETS TECHNIQUES ---
+\section{Projets Réalisés (ENSIIE)}
+
+\textbf{Gestion de bureau multi-sites} \hfill \textit{Java \& UML}
+\begin{itemize}
+    \item Modélisation et implémentation d'un système complexe de gestion d'espace de travail.
+\end{itemize}
+
+\vspace{6pt}
+
+\textbf{Développement de jeux \& Logique} \hfill \textit{C \& Python}
+\begin{itemize}
+    \item Programmation de mécaniques de jeu intégrant de la logique probabiliste.
+\end{itemize}
+
+\vspace{6pt}
+
+\textbf{Traitement d'images et Interface Système} \hfill \textit{C, C++ \& Qt}
+\begin{itemize}
+    \item Développement d'algorithmes de traitement d'images et d'une interface de gestion de fichiers.
+\end{itemize}
+
+% --- COMPÉTENCES ---
+\section{Compétences \& Centres d'intérêt}
+\begin{itemize}
+    \item \textbf{Langages :} Python, C, Java, C++, JavaScript, SQL, PHP, Shell/Linux.
+    \item \textbf{Sécurité \& Réseaux :} Cisco Packet Tracer, NetSim, MSSGUARD (SOC), Windows Event Viewer.
+    \item \textbf{Cyber-entraînement :} Pratique sur TryHackMe, Root-me, OverTheWire, Network Academy.
+    \item \textbf{Langues :} Français (Maternel), Anglais (B2 certifié), Allemand (Débutant), Espagnol (Débutant), Arabe (Débutant).
+    \item \textbf{Intérêts :} Football (Équipe scolaire), Musculation, Jeux vidéo (Action/Aventure, Arcade).
+\end{itemize}
+
+\end{document}

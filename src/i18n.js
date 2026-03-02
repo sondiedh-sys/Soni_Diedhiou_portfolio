@@ -105,7 +105,7 @@ export const translations = {
         contact: {
             titlePrefix: "Me",
             titleHighlight: "Contacter",
-            description: "À la recherche d'un stage (mai-septembre) en Sécurité des Systèmes d'Information, je suis ouvert aux opportunités et aux discussions.",
+            description: "À la recherche d'un stage (début juin à début septembre) en Sécurité des Systèmes d'Information, je suis ouvert aux opportunités et aux discussions.",
             emailLabel: "Email",
             locationLabel: "Localisation",
             locationValue: "Île-de-France"
@@ -223,7 +223,7 @@ export const translations = {
         contact: {
             titlePrefix: "Get in",
             titleHighlight: "Touch",
-            description: "Looking for an internship (May-September) in Information Systems Security. I am open to new opportunities and discussions.",
+            description: "Looking for an internship (early June to early September) in Information Systems Security. I am open to new opportunities and discussions.",
             emailLabel: "Email",
             locationLabel: "Location",
             locationValue: "Île-de-France, France"

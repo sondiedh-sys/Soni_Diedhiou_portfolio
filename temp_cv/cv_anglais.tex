@@ -1,0 +1,117 @@
+\documentclass[10pt, a4paper]{article}
+
+% --- Base Packages ---
+\usepackage[a4paper, left=1.5cm, right=1.5cm, top=1.5cm, bottom=1.5cm]{geometry}
+\usepackage{fontspec}
+\usepackage[english, bidi=basic, provide=*]{babel}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+
+% --- Font Configuration ---
+\babelprovide[import, onchar=ids fonts]{english}
+\babelfont{rm}{Noto Sans}
+
+% --- Style Configuration ---
+\pagestyle{empty}
+\raggedright
+\definecolor{darkblue}{RGB}{0, 51, 102}
+\setlist[itemize]{leftmargin=*, noitemsep, topsep=2pt}
+
+\titleformat{\section}{\large\bfseries\color{darkblue}\uppercase}{}{0pt}{}[\titlerule]
+\titlespacing{\section}{0pt}{12pt}{8pt}
+
+% --- Document Start ---
+\begin{document}
+
+% --- HEADER ---
+\begin{center}
+    {\Huge \bfseries SONI DIEDHIOU} \\
+    \vspace{4pt}
+    {\large \bfseries 2nd Year Student - ENSIIE School of Engineering} \\
+    \vspace{6pt}
+    \small
+    \href{mailto:sondiedh@gmail.com}{sondiedh@gmail.com} $|$ +33 6 88 87 66 21 $|$ Paris Area, France \\
+    \vspace{2pt}
+    \href{https://www.linkedin.com/in/soni-diedhiou-30b291348}{LinkedIn: soni-diedhiou} $|$ 
+    \href{https://github.com/sondiedh-sys}{GitHub: sondiedh-sys} $|$ 
+    \href{https://soni-diedhiou-portfolio.vercel.app}{Portfolio: soni-diedhiou-portfolio.vercel.app} \\
+    \vspace{4pt}
+    \textit{Seeking a Cybersecurity Internship (May to Sept) | Passionate about computer systems and network security.}
+\end{center}
+
+% --- EDUCATION ---
+\section{Education}
+\textbf{ENSIIE - National School of Computer Science for Industry and Business} \hfill \textbf{2024 -- 2027} \\
+Master of Science in Engineering - Computer Science \& Applied Mathematics \hfill \textit{Evry, France} \\
+Projected Double Degree (3rd year): \textbf{Master SECRETS} - Cybersecurity, Systems and Network Security. \\
+Software Engineering track. Focus on software development and systems architecture. \\
+
+\vspace{4pt}
+\textbf{Asia Pacific University (APU)} \hfill \textbf{2025} \\
+Academic Exchange Semester - Master of Science in Cybersecurity \hfill \textit{Kuala Lumpur, Malaysia} \\
+Courses: Information Security Architecture (ISA), Design (ISD), SOC, Cyber Threats (CST), Network Design Performance (NDP). \\
+
+\vspace{4pt}
+\textbf{Lycée Michelet} \hfill \textbf{2022 -- 2024} \\
+Preparatory Classes for Grandes Écoles (CPGE) - Math, Physics, CS \hfill \textit{Vanves, France} \\
+Intensive two-year program preparing for competitive entrance exams to top engineering schools. \\
+
+\vspace{4pt}
+\textbf{Lycée des Sept Mares} \hfill \textbf{2022} \\
+French General Baccalaureate - \textbf{Highest Honors (Mention Très Bien)} \hfill \textit{Maurepas, France}
+
+% --- PROFESSIONAL EXPERIENCE ---
+\section{Professional Experience}
+
+\textbf{CNAM (National Conservatory of Arts and Crafts)} \hfill \textbf{June -- July 2025} \\
+\textit{Web Development and Statistics Intern} \\
+Project Link: \href{https://sondiedh.pythonanywhere.com}{sondiedh.pythonanywhere.com}
+\begin{itemize}
+    \item Designed statistical data visualization tools.
+    \item Tech stack: Python (Flask), HTML/CSS.
+\end{itemize}
+
+\vspace{6pt}
+
+\textbf{Auchan} \hfill \textbf{Since 2024} \\
+\textit{Multi-skilled Employee (Part-time Permanent Contract) - Produce Section}
+\begin{itemize}
+    \item Managed inventory, organized shelves, and handled deliveries.
+    \item Developed professional rigor and organizational skills in a fast-paced environment.
+\end{itemize}
+
+% --- TECHNICAL PROJECTS ---
+\section{Technical Projects (ENSIIE)}
+
+\textbf{Multi-site Office Management System} \hfill \textit{Java \& UML}
+\begin{itemize}
+    \item Modeled and implemented a complex workspace management system.
+\end{itemize}
+
+\vspace{6pt}
+
+\textbf{Game Development \& Logic} \hfill \textit{C \& Python}
+\begin{itemize}
+    \item Programmed game mechanics integrating probabilistic logic.
+\end{itemize}
+
+\vspace{6pt}
+
+\textbf{Image Processing \& System Interface} \hfill \textit{C, C++ \& Qt}
+\begin{itemize}
+    \item Developed image processing algorithms and a file management system interface.
+\end{itemize}
+
+% --- SKILLS & INTERESTS ---
+\section{Skills \& Interests}
+\begin{itemize}
+    \item \textbf{Languages:} Python, C, Java, C++, JavaScript, SQL, PHP, Shell/Linux.
+    \item \textbf{Security \& Networking:} Cisco Packet Tracer, NetSim, MSSGUARD (SOC), Windows Event Viewer.
+    \item \textbf{Cyber Training:} Regular practice on TryHackMe, Root-me, OverTheWire, Network Academy.
+    \item \textbf{Languages:} French (Native), English (B2 Certified), German (Beginner), Spanish (Beginner), Arabic (Beginner - Self-taught).
+    \item \textbf{Interests:} Competitive Football (School team), Gym training, Video games (Action/Adventure, Arcade).
+\end{itemize}
+
+\end{document}
