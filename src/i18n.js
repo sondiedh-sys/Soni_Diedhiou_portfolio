@@ -99,6 +99,14 @@ export const translations = {
                     title: "Cyber-Sécurité & CTF Autosolvers",
                     category: "Sécurité Réseau (Python/Bash)",
                     description: "Pratique régulière sur TryHackMe, Root-Me. Rétro-ingénierie et automatisation de résolution de CTF (ex: Solveurs TCP programmés via Sockets Python)."
+                },
+                {
+                    title: "Certification OSINT - Security Blue Team",
+                    category: "Cybersécurité & Renseignement",
+                    description: "Certification attestant de compétences avancées en recherche d’informations en sources ouvertes (OSINT), techniques d’investigation numérique et analyse de données publiques.",
+                    reports: [
+                        { text: "Voir la Certification", url: "/certif_osint.pdf" }
+                    ]
                 }
             ]
         },
@@ -114,7 +122,7 @@ export const translations = {
             rights: "Tous droits réservés",
             builtWith: "Construit avec React & Vite",
             lastUpdated: "Dernière mise à jour",
-            date: "Février 2026"
+            date: "Mars 2026"
         }
     },
     en: {
@@ -217,6 +225,14 @@ export const translations = {
                     title: "Cyber-Security & CTF Autosolvers",
                     category: "Network Security (Python/Bash)",
                     description: "Regular practice on TryHackMe, Root-Me. Reverse engineering and automated CTF resolution (e.g., programmed TCP solvers via Python Sockets)."
+                },
+                {
+                    title: "OSINT Certification - Security Blue Team",
+                    category: "Cybersecurity & Intelligence",
+                    description: "Certification demonstrating advanced skills in Open Source Intelligence (OSINT), digital investigation techniques, and public data analysis.",
+                    reports: [
+                        { text: "View Certification", url: "/certif_osint.pdf" }
+                    ]
                 }
             ]
         },
@@ -232,7 +248,7 @@ export const translations = {
             rights: "All rights reserved",
             builtWith: "Built with React & Vite",
             lastUpdated: "Last updated",
-            date: "February 2026"
+            date: "March 2026"
         }
     }
 };
