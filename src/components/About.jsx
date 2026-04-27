@@ -8,6 +8,7 @@ const About = () => {
         <section id="about" className={styles.about}>
             <div className={`container ${styles.container}`}>
                 <div className={styles.textContent}>
+                    <span className={styles.eyebrow}>// ABOUT ME</span>
                     <h2 className={styles.sectionTitle}>
                         {t.about.title} <span className="text-gradient">Soni</span>
                     </h2>

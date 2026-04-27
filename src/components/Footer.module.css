@@ -1,15 +1,27 @@
 .footer {
-    padding: 3rem 0;
-    background: var(--bg-primary);
+    padding: 2.5rem 0;
+    background: var(--bg-secondary);
     border-top: 1px solid var(--glass-border);
-    margin-top: 4rem;
+    position: relative;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 1px;
+    background: var(--accent-gradient);
+    opacity: 0.6;
 }
 
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
     text-align: center;
 }
 
@@ -17,54 +29,61 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 700;
-    color: var(--text-primary);
+    font-family: var(--font-mono);
+    letter-spacing: 1px;
 }
 
 .copyright {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
-    font-size: 0.875rem;
-    color: var(--text-secondary);
+    gap: 0.25rem;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    font-family: var(--font-mono);
+    line-height: 1.6;
 }
 
 .update {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    padding: 0.5rem 1rem;
-    background: var(--glass-bg);
-    border: 1px solid var(--glass-border);
+    padding: 0.4rem 0.85rem;
+    background: rgba(16, 185, 129, 0.08);
+    border: 1px solid rgba(16, 185, 129, 0.2);
     border-radius: 100px;
-    font-size: 0.75rem;
+    font-size: 0.78rem;
     color: var(--text-secondary);
-    margin-top: 1rem;
+    font-family: var(--font-mono);
 }
 
 .pulse {
-    width: 6px;
-    height: 6px;
+    width: 7px;
+    height: 7px;
     background-color: #10b981;
     border-radius: 50%;
-    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+    box-shadow: 0 0 8px #10b981;
     animation: pulse 2s infinite;
 }
 
 @keyframes pulse {
-    0% {
-        transform: scale(0.95);
+
+    0%,
+    100% {
+        opacity: 1;
         box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
     }
 
-    70% {
-        transform: scale(1);
+    50% {
+        opacity: 0.7;
         box-shadow: 0 0 0 6px rgba(16, 185, 129, 0);
     }
+}
 
-    100% {
-        transform: scale(0.95);
-        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
