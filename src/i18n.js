@@ -71,7 +71,8 @@ export const translations = {
                     category: "Network Design & Performance (APU)",
                     description: "Conception d'une infrastructure LAN 3-tier pour un laboratoire de cybersécurité universitaire : topologie redondante, segmentation VLAN, standards WiFi 802.11ac, gestion FCAPS. Simulation NetSim et évaluation comparative de protocoles de routage (OSPF vs RIP) et d'algorithmes de chiffrement (AES/XOR/TEA).",
                     reports: [
-                        { text: "Rapport NDP", url: "/NDP_Network_Design.pdf" }
+                        { text: "Rapport Task B (Design)", url: "/NDP_Network_Design.pdf" },
+                        { text: "Rapport Task C (Performance)", url: "/NDP_TaskC_Performance.pdf" }
                     ]
                 },
                 {
@@ -88,6 +89,14 @@ export const translations = {
                     description: "Étude offensive d'une technique de Direct Kernel Object Manipulation (EPROCESS hiding) utilisée pour dissimuler des processus malveillants. Modélisation de la chaîne d'attaque avec STRIDE et évaluation de défenses basées sur ML (SVM, CNN, Random Forest) pour la détection d'anomalies kernel.",
                     reports: [
                         { text: "Rapport DKOM", url: "/CST_DKOM_Kernel.pdf" }
+                    ]
+                },
+                {
+                    title: "ISA — Secrets dans le Code Source (Revue de Littérature)",
+                    category: "Information Security Architecture (APU)",
+                    description: "Revue critique de 7 études peer-reviewed sur l'exposition massive de credentials (mots de passe, clés API, tokens) dans des dépôts publics — plus de 100 000 repos GitHub affectés (Meli et al. 2019). Identification de 3 faiblesses structurelles : persistance dans les artefacts logiciels, insuffisance des outils de détection automatisés, et écart entre pratique développeur et gestion sécurisée des secrets.",
+                    reports: [
+                        { text: "Rapport ISA Secrets", url: "/ISA_Secrets_Source_Code.pdf" }
                     ]
                 },
                 {
@@ -245,7 +254,8 @@ export const translations = {
                     category: "Network Design & Performance (APU)",
                     description: "Design of a 3-tier LAN infrastructure for a university cybersecurity lab: redundant topology, VLAN segmentation, 802.11ac WiFi standards, FCAPS management. NetSim simulation and comparative evaluation of routing protocols (OSPF vs RIP) and encryption algorithms (AES/XOR/TEA).",
                     reports: [
-                        { text: "NDP Report", url: "/NDP_Network_Design.pdf" }
+                        { text: "Task B Report (Design)", url: "/NDP_Network_Design.pdf" },
+                        { text: "Task C Report (Performance)", url: "/NDP_TaskC_Performance.pdf" }
                     ]
                 },
                 {
@@ -262,6 +272,14 @@ export const translations = {
                     description: "Offensive study of a Direct Kernel Object Manipulation technique (EPROCESS hiding) used to conceal malicious processes. Attack chain modeling with STRIDE and evaluation of ML-based defenses (SVM, CNN, Random Forest) for kernel anomaly detection.",
                     reports: [
                         { text: "DKOM Report", url: "/CST_DKOM_Kernel.pdf" }
+                    ]
+                },
+                {
+                    title: "ISA — Hardcoded Secrets in Source Code (Literature Review)",
+                    category: "Information Security Architecture (APU)",
+                    description: "Critical review of 7 peer-reviewed studies on the widespread exposure of credentials (passwords, API keys, tokens) in public repositories — over 100,000 GitHub repos affected (Meli et al. 2019). Identified 3 structural weaknesses: persistence of secrets in software artifacts, inadequacy of automated detection tools, and the systemic gap between developer practice and secure secret management.",
+                    reports: [
+                        { text: "ISA Secrets Report", url: "/ISA_Secrets_Source_Code.pdf" }
                     ]
                 },
                 {
