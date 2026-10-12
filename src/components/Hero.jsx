@@ -1,57 +1,41 @@
 import styles from './Hero.module.css';
 import { useLanguage } from '../context/LanguageContext';
-import BinaryBackground from './BinaryBackground';
 
 const Hero = () => {
     const { t } = useLanguage();
     return (
         <section id="home" className={styles.hero}>
-            <BinaryBackground />
-            <div className={styles.glowBlob + ' ' + styles.blobPrimary}></div>
-            <div className={styles.glowBlob + ' ' + styles.blobSecondary}></div>
+            <div className={styles.ambient} aria-hidden="true" />
 
-            <div className={`${styles.bracket} ${styles.bracketTL}`}></div>
-            <div className={`${styles.bracket} ${styles.bracketBR}`}></div>
+            <div className={`container ${styles.content}`}>
+                <div className={styles.text}>
+                    <p className={styles.prompt}>
+                        <span className={styles.arrow}>$</span> whoami
+                    </p>
+                    <h1 className={styles.title}>
+                        <span className={styles.greeting}>{t.hero.greeting}</span>
+                        Soni <span className="serif">Diedhiou</span><span className={styles.cursor} aria-hidden="true">_</span>
+                    </h1>
+                    <p className={styles.role}>{t.hero.role}</p>
+                    <p className={styles.subtitle}>{t.hero.description}</p>
 
-            <div className={`container ${styles.content} animate-fade-in`}>
-                <div className={styles.profileWrapper}>
-                    <img
-                        src="/photo.jpg"
-                        alt="Soni Diedhiou"
-                        className={styles.profileImg}
-                        onError={(e) => { e.target.src = 'https://ui-avatars.com/api/?name=Soni+Diedhiou&background=random&size=160' }}
-                    />
+                    <ul className={styles.focus}>
+                        {t.hero.focus.map((f) => <li key={f}>{f}</li>)}
+                    </ul>
+
+                    <div className={styles.actions}>
+                        <a href="#projects" className="btn btn-primary">{t.hero.btnProjects} →</a>
+                        <a href={t.hero.resumePath} target="_blank" rel="noopener noreferrer" className="btn">{t.hero.btnResume} ↗</a>
+                    </div>
                 </div>
 
-                <div className={styles.label}>{t.hero.role}</div>
-
-                <span className={styles.prompt}>
-                    <span className={styles.arrow}>$</span>{t.hero.greeting}
-                </span>
-                <h1 className={styles.title}>
-                    <span className="text-gradient">Soni Diedhiou</span>
-                    <span className={styles.titleCursor}>_</span>
-                </h1>
-
-                <div className={styles.schoolLogos}>
-                    <img src="/logo-ensiie.png" alt="ENSIIE Logo" className={styles.schoolLogo} />
-                    <img src="/logo-imt.png" alt="Institut Mines-Télécom Logo" className={styles.schoolLogo} />
-                    <img src="/logo-apu.png" alt="APU Logo" className={styles.schoolLogo} />
-                </div>
-
-                <p className={styles.subtitle}>
-                    {t.hero.description}
-                </p>
-                <div className={styles.actions}>
-                    <a href="#projects" className={`${styles.btn} ${styles.btnPrimary} hover-lift`}>
-                        {t.hero.btnProjects} →
-                    </a>
-                    <a href={t.hero.resumePath} download className={`${styles.btn} ${styles.btnSecondary} hover-lift`}>
-                        {t.hero.btnResume} ↓
-                    </a>
-                    <a href="#contact" className={`${styles.btn} ${styles.btnSecondary} hover-lift`}>
-                        {t.hero.btnContact}
-                    </a>
+                <div className={styles.side}>
+                    <img src="/photo.webp" alt="Soni Diedhiou" width="240" height="222" className={styles.photo} fetchPriority="high" />
+                    <div className={styles.logos}>
+                        <img src="/logo-ensiie.webp" alt="ENSIIE" width="107" height="32" />
+                        <img src="/logo-imt.webp" alt="Institut Mines-Télécom" width="78" height="32" />
+                        <img src="/logo-apu.webp" alt="Asia Pacific University" width="145" height="32" />
+                    </div>
                 </div>
             </div>
         </section>

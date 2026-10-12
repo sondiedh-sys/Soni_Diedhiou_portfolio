@@ -1,265 +1,131 @@
-.about {
-    padding: 7rem 0;
-    position: relative;
-    background: linear-gradient(to bottom, var(--bg-primary), var(--bg-secondary));
-}
-
-.container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 3.5rem;
-}
-
-.textContent {
-    max-width: 100%;
-    margin: 0 auto;
-    width: 100%;
-}
-
-.eyebrow {
-    display: inline-block;
-    font-family: var(--font-mono);
-    color: var(--accent-secondary);
-    font-size: 0.85rem;
-    font-weight: 600;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-    padding: 0.35rem 0.9rem;
-    border: 1px solid rgba(168, 85, 247, 0.3);
-    border-radius: 6px;
-    background: rgba(168, 85, 247, 0.05);
-}
-
-.sectionTitle {
-    font-size: clamp(2rem, 5vw, 3rem);
-    margin-bottom: 1.5rem;
-    font-weight: 800;
-    letter-spacing: -1px;
+.intro {
+    margin-bottom: 4rem;
 }
 
 .description {
-    font-size: 1.1rem;
     color: var(--text-secondary);
-    margin-bottom: 2.5rem;
-    line-height: 1.8;
-    max-width: 850px;
+    font-size: 1.1rem;
+    max-width: 720px;
 }
 
-/* Timeline */
+.columns {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 3rem;
+}
+
+.block {
+    margin-bottom: 4rem;
+}
+
+.blockTitle {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+}
+
 .timeline {
-    margin-top: 3rem;
+    list-style: none;
 }
 
-.timelineTitle {
-    font-size: 1.35rem;
-    color: var(--text-primary);
-    margin-bottom: 1.75rem;
-    padding-left: 1rem;
-    border-left: 3px solid var(--accent-primary);
-    font-weight: 700;
-}
-
-.timelineList {
+.item {
     position: relative;
-    padding-left: 2rem;
-    border-left: 2px solid var(--glass-border);
+    padding: 1.25rem 3.5rem 1.25rem 0;
+    border-bottom: 1px solid var(--border);
 }
 
-.timelineItem {
-    position: relative;
-    margin-bottom: 1.5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1.5rem;
-    background: var(--bg-card);
-    padding: 1.25rem 1.5rem;
-    border-radius: 12px;
-    border: 1px solid var(--glass-border);
-    transition: all var(--transition-normal);
-    backdrop-filter: blur(8px);
-}
-
-.timelineItem:hover {
-    border-color: rgba(168, 85, 247, 0.4);
-    transform: translateX(4px);
-    box-shadow: 0 8px 30px -10px rgba(168, 85, 247, 0.3);
-}
-
-.timelineItem:last-child {
-    margin-bottom: 0;
-}
-
-.timelineDot {
-    position: absolute;
-    left: -2.5rem;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 14px;
-    height: 14px;
-    background: var(--accent-gradient);
-    border-radius: 50%;
-    border: 3px solid var(--bg-primary);
-    box-shadow: 0 0 12px rgba(168, 85, 247, 0.6);
-    z-index: 1;
-}
-
-.timelineContent {
-    flex: 1;
-}
-
-.timelineHeader {
+.itemHead {
     display: flex;
     flex-wrap: wrap;
-    align-items: baseline;
     justify-content: space-between;
-    margin-bottom: 0.5rem;
-    gap: 0.75rem;
+    align-items: baseline;
+    gap: 0.25rem 1rem;
+    margin-bottom: 0.4rem;
 }
 
-.timelineName {
-    font-size: 1.05rem;
-    color: var(--text-primary);
+.itemName {
+    font-size: 1.02rem;
     font-weight: 600;
 }
 
-.timelineDate {
+.itemDate {
     font-family: var(--font-mono);
     font-size: 0.78rem;
-    color: var(--accent-secondary);
-    font-weight: 500;
-    padding: 0.25rem 0.75rem;
-    background: rgba(168, 85, 247, 0.1);
-    border-radius: 100px;
-    border: 1px solid rgba(168, 85, 247, 0.25);
+    color: var(--text-muted);
+    white-space: nowrap;
 }
 
-.timelineDesc {
-    font-size: 0.92rem;
+.itemDesc {
     color: var(--text-secondary);
-    line-height: 1.6;
+    font-size: 0.93rem;
 }
 
-.timelineLogo {
-    height: 44px;
-    width: auto;
+.itemLink {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.itemLink:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    position: absolute;
+    top: 1.25rem;
+    right: 0;
+    width: 36px;
+    height: 36px;
     object-fit: contain;
-    border-radius: 4px;
-    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.4));
-    flex-shrink: 0;
+    border-radius: 6px;
+    background: #fff;
+    padding: 3px;
 }
 
-/* Skills */
-.skillsSection {
-    margin-top: 4rem;
-}
-
-.skillsGrid {
+.skills {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.25rem;
-    margin-top: 1.5rem;
-}
-
-.skillCategoryBlock {
-    background: var(--bg-card);
-    border: 1px solid var(--glass-border);
-    padding: 1.5rem;
-    border-radius: 16px;
-    transition: all var(--transition-normal);
-    backdrop-filter: blur(10px);
-    position: relative;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1px;
+    margin-top: 1.25rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
     overflow: hidden;
 }
 
-.skillCategoryBlock::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 2px;
-    background: var(--accent-gradient);
-    opacity: 0.6;
-    transition: opacity var(--transition-normal);
+.skillCard {
+    box-shadow: 0 0 0 1px var(--border);
+    background: var(--bg);
+    padding: 1.5rem;
 }
 
-.skillCategoryBlock:hover {
-    transform: translateY(-4px);
-    border-color: rgba(168, 85, 247, 0.35);
-    box-shadow: 0 12px 35px -12px rgba(168, 85, 247, 0.35);
+.skillName {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 0.9rem;
 }
 
-.skillCategoryBlock:hover::before {
-    opacity: 1;
-}
-
-.skillCategoryName {
-    color: var(--text-primary);
-    font-size: 1.05rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.skillChips {
+.chips {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 0.4rem;
 }
 
-.skillChip {
-    background: rgba(168, 85, 247, 0.07);
-    border: 1px solid rgba(168, 85, 247, 0.18);
-    color: var(--text-primary);
-    padding: 0.35rem 0.8rem;
-    border-radius: 20px;
-    font-size: 0.85rem;
-    font-weight: 500;
-    transition: all 0.25s ease;
-    font-family: var(--font-mono);
-}
-
-.skillChip:hover {
-    background: rgba(168, 85, 247, 0.18);
-    border-color: rgba(168, 85, 247, 0.45);
-    transform: scale(1.05);
-}
-
-.reportLink {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.3rem;
-    margin-top: 0.75rem;
-    padding: 0.4rem 0.85rem;
-    font-size: 0.82rem;
-    font-weight: 500;
-    color: var(--accent-primary);
-    background: rgba(34, 211, 238, 0.08);
-    border: 1px solid rgba(34, 211, 238, 0.25);
-    border-radius: 6px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    font-family: var(--font-mono);
-}
-
-.reportLink:hover {
-    background: rgba(34, 211, 238, 0.18);
-    border-color: var(--accent-primary);
-    transform: translateY(-2px);
-}
-
-@media (max-width: 768px) {
-    .timelineItem {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.75rem;
+@media (max-width: 860px) {
+    .columns {
+        grid-template-columns: 1fr;
+        gap: 0;
     }
 
-    .timelineLogo {
-        height: 36px;
+    .skills {
+        grid-template-columns: 1fr;
     }
 }

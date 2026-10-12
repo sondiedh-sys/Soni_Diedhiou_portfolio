@@ -2,86 +2,63 @@ import { useState, useEffect } from 'react';
 import styles from './Navbar.module.css';
 import { useLanguage } from '../context/LanguageContext';
 
-const SECTION_IDS = ['home', 'about', 'projects', 'contact'];
+const SECTION_IDS = ['about', 'projects', 'contact'];
 
 const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
-    const [activeSection, setActiveSection] = useState('home');
-    const [progress, setProgress] = useState(0);
+    const [activeSection, setActiveSection] = useState('');
     const { language, toggleLanguage, t } = useLanguage();
 
     useEffect(() => {
-        const handleScroll = () => {
-            setScrolled(window.scrollY > 50);
+        const onScroll = () => setScrolled(window.scrollY > 40);
+        onScroll();
+        window.addEventListener('scroll', onScroll, { passive: true });
 
-            // Scroll progress
-            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-            const scrolledPct = docHeight > 0 ? (window.scrollY / docHeight) * 100 : 0;
-            setProgress(scrolledPct);
+        // Active link = section crossing the middle of the viewport
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach((e) => { if (e.isIntersecting) setActiveSection(e.target.id); });
+        }, { rootMargin: '-50% 0px -50% 0px' });
+        SECTION_IDS.forEach((id) => {
+            const el = document.getElementById(id);
+            if (el) io.observe(el);
+        });
 
-            // Active section based on viewport center
-            const viewportMid = window.scrollY + window.innerHeight / 2;
-            let current = 'home';
-            for (const id of SECTION_IDS) {
-                const el = document.getElementById(id);
-                if (!el) continue;
-                const top = el.offsetTop;
-                const bottom = top + el.offsetHeight;
-                if (viewportMid >= top && viewportMid < bottom) {
-                    current = id;
-                    break;
-                }
-            }
-            setActiveSection(current);
+        return () => {
+            window.removeEventListener('scroll', onScroll);
+            io.disconnect();
         };
-
-        handleScroll();
-        window.addEventListener('scroll', handleScroll, { passive: true });
-        return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-    const links = [
-        { id: 'about', label: t.nav.about },
-        { id: 'projects', label: t.nav.projects },
-        { id: 'contact', label: t.nav.contact },
-    ];
-
     return (
-        <>
-            <div className={styles.scrollProgress} style={{ width: `${progress}%` }} />
-            <header className={`${styles.header} ${scrolled ? styles.scrolled : ''}`}>
-                <nav className={`container ${styles.nav}`}>
-                    <div className={styles.logo}>
-                        <a href="#home" className={styles.logoLink}>
-                            <span className={styles.logoBracket}>&lt;</span>
-                            <span className="text-gradient">SD</span>
-                            <span className={styles.logoBracket}>/&gt;</span>
-                        </a>
-                    </div>
-                    <ul className={styles.navLinks}>
-                        {links.map((link) => (
-                            <li key={link.id}>
-                                <a
-                                    href={`#${link.id}`}
-                                    className={`${styles.navLink} ${activeSection === link.id ? styles.navLinkActive : ''}`}
-                                >
-                                    {link.label}
-                                </a>
-                            </li>
-                        ))}
-                        <li>
-                            <button
-                                onClick={toggleLanguage}
-                                className={styles.langToggle}
-                                aria-label="Toggle language"
+        <header className={`${styles.header} ${scrolled ? styles.scrolled : ''}`}>
+            <nav className={`container ${styles.nav}`} aria-label="Navigation principale">
+                <a href="#home" className={styles.logo}>
+                    <span className={styles.muted}>~/</span>soni
+                </a>
+                <ul className={styles.navLinks}>
+                    {SECTION_IDS.map((id) => (
+                        <li key={id}>
+                            <a
+                                href={`#${id}`}
+                                className={`${styles.navLink} ${activeSection === id ? styles.active : ''}`}
+                                aria-current={activeSection === id ? 'true' : undefined}
                             >
-                                {language === 'fr' ? 'EN' : 'FR'}
-                            </button>
+                                {t.nav[id]}
+                            </a>
                         </li>
-                    </ul>
-                </nav>
-            </header>
-        </>
+                    ))}
+                    <li>
+                        <button
+                            onClick={toggleLanguage}
+                            className={styles.langToggle}
+                            aria-label={language === 'fr' ? 'EN, switch to English' : 'FR, passer en français'}
+                        >
+                            {language === 'fr' ? 'EN' : 'FR'}
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
     );
 };
 
