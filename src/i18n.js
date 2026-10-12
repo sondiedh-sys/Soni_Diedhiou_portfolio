@@ -1,5 +1,6 @@
 // Content shared by both languages
 const GITHUB = "https://github.com/sondiedh-sys";
+const SECRETS_URL = "https://www.universite-paris-saclay.fr/formation/master/informatique/m2-securite-des-contenus-des-reseaux-des-telecommunications-et-des-systemes-secrets";
 
 export const translations = {
     fr: {
@@ -15,7 +16,8 @@ export const translations = {
             focus: ["Audit & pentest", "Sécurité de l'IA", "Cloud & architecture"],
             btnProjects: "Voir mes projets",
             btnResume: "CV (PDF)",
-            resumePath: "/cv_fr.pdf"
+            resumePath: "/cv_fr.pdf",
+            schoolLinks: { saclay: SECRETS_URL, ensiie: "https://www.ensiie.fr/formation/genie-logiciel-et-securite" }
         },
         about: {
             eyebrow: "Parcours",
@@ -246,7 +248,8 @@ export const translations = {
             focus: ["Audit & pentest", "AI security", "Cloud & architecture"],
             btnProjects: "See my work",
             btnResume: "Resume (PDF)",
-            resumePath: "/cv_en.pdf"
+            resumePath: "/cv_en.pdf",
+            schoolLinks: { saclay: SECRETS_URL, ensiie: "https://www.ensiie.fr/en/formation/genie-logiciel-et-securite" }
         },
         about: {
             eyebrow: "Background",
