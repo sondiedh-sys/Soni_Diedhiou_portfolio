@@ -32,9 +32,15 @@ const Hero = () => {
                 <div className={styles.side}>
                     <img src="/photo.webp" alt="Soni Diedhiou" width="240" height="222" className={styles.photo} fetchPriority="high" />
                     <div className={styles.logos}>
-                        <img src="/logo-ensiie.webp" alt="ENSIIE" width="107" height="32" />
-                        <img src="/logo-imt.webp" alt="Institut Mines-Télécom" width="78" height="32" />
-                        <img src="/logo-apu.webp" alt="Asia Pacific University" width="145" height="32" />
+                        <a href="https://www.uvsq.fr" target="_blank" rel="noopener noreferrer">
+                            <img src="/logo-uvsq.webp" alt="UVSQ, Université Paris-Saclay" width="38" height="40" />
+                        </a>
+                        <a href="https://www.ensiie.fr" target="_blank" rel="noopener noreferrer">
+                            <img src="/logo-ensiie.webp" alt="ENSIIE" width="107" height="32" />
+                        </a>
+                        <a href="https://www.imt.fr" target="_blank" rel="noopener noreferrer">
+                            <img src="/logo-imt.webp" alt="Institut Mines-Télécom" width="78" height="32" />
+                        </a>
                     </div>
                 </div>
             </div>

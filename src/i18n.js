@@ -29,6 +29,7 @@ export const translations = {
                 {
                     name: "M2 SECRETS — Université Paris-Saclay (UVSQ)",
                     date: "2026 – 2027",
+                    logo: "/logo-uvsq.webp",
                     description: "Sécurité des contenus, réseaux, télécoms et systèmes, en bicursus avec l'ENSIIE : cryptographie, sécurité systèmes et réseaux, sécurité web et applicative, détection d'intrusion et réponse à incident."
                 },
                 {
@@ -259,6 +260,7 @@ export const translations = {
                 {
                     name: "M2 SECRETS — Université Paris-Saclay (UVSQ)",
                     date: "2026 – 2027",
+                    logo: "/logo-uvsq.webp",
                     description: "Content, network, telecom and systems security, as a dual degree with ENSIIE: cryptography, systems and network security, web and application security, intrusion detection and incident response."
                 },
                 {

@@ -151,9 +151,23 @@
     background: #f2f1ee;
 }
 
+.logos a {
+    display: block;
+    transition: opacity 0.2s ease;
+}
+
+.logos a:hover {
+    opacity: 0.75;
+}
+
 .logos img {
     height: 32px;
     width: auto;
+}
+
+/* Square shield logo: a bit taller to match the wide logos visually */
+.logos a:first-child img {
+    height: 40px;
 }
 
 @media (max-width: 860px) {
