@@ -230,3 +230,19 @@
         width: 140px;
     }
 }
+
+/* Landscape image under the text (non-wide card) */
+.feature.below.withMedia {
+    grid-template-columns: 1fr;
+}
+
+.feature.below .media {
+    padding: 0;
+    border-top: 1px solid var(--border);
+    background: #0d0f14;
+}
+
+.feature.below .media img {
+    width: 100%;
+    height: auto;
+}

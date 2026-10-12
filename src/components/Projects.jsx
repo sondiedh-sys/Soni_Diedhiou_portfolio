@@ -36,7 +36,7 @@ const Projects = () => {
                         <article
                             key={p.id}
                             id={`project-${p.id}`}
-                            className={`${styles.feature} ${i === 0 ? styles.wide : ''} ${p.image ? styles.withMedia : ''}`}
+                            className={`${styles.feature} ${i === 0 ? styles.wide : ''} ${p.image ? styles.withMedia : ''} ${p.mediaBelow ? styles.below : ''}`}
                             data-reveal
                         >
                             <div className={styles.body}>

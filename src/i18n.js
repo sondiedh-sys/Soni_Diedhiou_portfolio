@@ -108,9 +108,13 @@ export const translations = {
                     description: "Contrôleur de domaine Samba AD DC (Kerberos/LDAP) et SIEM Wazuh sur machines virtuelles, attaqués depuis Kali Linux. Objectif : une architecture sécurisée documentée selon le pilier sécurité du Well-Architected Framework.",
                     highlights: [
                         "Brute force avec chaîne de détection vérifiée de bout en bout (règles de corrélation sur mesure)",
-                        "Kerberoasting, avec diagnostic d'une incompatibilité outil / implémentation"
+                        "Kerberoasting tenté (compte de service avec SPN préparé) : bloqué par une incompatibilité outil / Samba, encore à résoudre"
                     ],
-                    tags: ["Samba AD", "Kerberos", "Wazuh", "Kali", "Impacket"]
+                    tags: ["Samba AD", "Kerberos", "Wazuh", "Kali", "NetExec"],
+                    image: "/homelab-bruteforce.webp",
+                    imageSize: [1200, 678],
+                    imageAlt: "En haut : brute force SMB avec NetExec depuis Kali. En bas : les alertes correspondantes dans Wazuh, dont la règle de corrélation brute force",
+                    mediaBelow: true
                 },
                 {
                     id: "app-muscu",
@@ -340,9 +344,13 @@ export const translations = {
                     description: "A Samba AD DC domain controller (Kerberos/LDAP) and a Wazuh SIEM on virtual machines, attacked from Kali Linux. Goal: a documented secure architecture following the security pillar of the Well-Architected Framework.",
                     highlights: [
                         "Brute force with an end-to-end verified detection chain (custom correlation rules)",
-                        "Kerberoasting, including a diagnosis of a tool / implementation incompatibility"
+                        "Kerberoasting attempted (service account with an SPN set up): blocked by a tool / Samba incompatibility, still to solve"
                     ],
-                    tags: ["Samba AD", "Kerberos", "Wazuh", "Kali", "Impacket"]
+                    tags: ["Samba AD", "Kerberos", "Wazuh", "Kali", "NetExec"],
+                    image: "/homelab-bruteforce.webp",
+                    imageSize: [1200, 678],
+                    imageAlt: "Top: SMB brute force with NetExec from Kali. Bottom: the matching Wazuh alerts, including the brute-force correlation rule",
+                    mediaBelow: true
                 },
                 {
                     id: "app-muscu",
