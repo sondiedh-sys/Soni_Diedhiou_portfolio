@@ -233,6 +233,24 @@ export const translations = {
             locationLabel: "Localisation",
             locationValue: "Île-de-France"
         },
+        terminal: {
+            placeholder: "tape « help » pour explorer",
+            label: "Terminal interactif",
+            help: ["Commandes : whoami, projects, skills, contact, cv, lang, ls, cd <dossier>, cat <fichier>, submit <flag>, clear", "Un flag est caché quelque part. À toi de jouer."],
+            opening: "Ouverture du CV…",
+            secretHint: "(encodé… un outil comme CyberChef pourrait aider)",
+            binary: "Fichier binaire. Essaie plutôt la commande « cv ».",
+            noFile: "Aucun fichier ou dossier de ce type",
+            cdRoot: "Permission refusée : tu es déjà à la racine de mon portfolio.",
+            flagOk: "✔ Flag valide, bien joué ! Écris-moi à sondiedh@gmail.com pour me dire comment tu l'as trouvé.",
+            flagKo: "✘ Flag invalide. Continue de chercher.",
+            sudo: "soni n'est pas dans le fichier sudoers. Cet incident sera signalé.",
+            rm: "Bien essayé. Ce terminal est en lecture seule.",
+            nmap: "Indice : les fichiers cachés commencent par un point.",
+            exit: "Il n'y a pas d'issue, seulement des projets à voir plus bas ↓",
+            notFound: "commande introuvable (tape « help »)",
+            consoleHint: "Tu fouilles la console ? Il y a un terminal sur la page. Commence par « ls -a »."
+        },
         footer: {
             rights: "Tous droits réservés",
             lastUpdated: "Mis à jour",
@@ -468,6 +486,24 @@ export const translations = {
             emailLabel: "Email",
             locationLabel: "Location",
             locationValue: "Île-de-France, France"
+        },
+        terminal: {
+            placeholder: "type \"help\" to explore",
+            label: "Interactive terminal",
+            help: ["Commands: whoami, projects, skills, contact, cv, lang, ls, cd <dir>, cat <file>, submit <flag>, clear", "A flag is hidden somewhere. Your move."],
+            opening: "Opening the resume…",
+            secretHint: "(encoded… a tool like CyberChef might help)",
+            binary: "Binary file. Try the \"cv\" command instead.",
+            noFile: "No such file or directory",
+            cdRoot: "Permission denied: you're already at the root of my portfolio.",
+            flagOk: "✔ Valid flag, well done! Email me at sondiedh@gmail.com and tell me how you found it.",
+            flagKo: "✘ Invalid flag. Keep digging.",
+            sudo: "soni is not in the sudoers file. This incident will be reported.",
+            rm: "Nice try. This terminal is read-only.",
+            nmap: "Hint: hidden files start with a dot.",
+            exit: "There's no way out, only projects to see below ↓",
+            notFound: "command not found (type \"help\")",
+            consoleHint: "Digging through the console? There's a terminal on the page. Start with \"ls -a\"."
         },
         footer: {
             rights: "All rights reserved",

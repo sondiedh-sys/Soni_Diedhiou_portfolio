@@ -1,5 +1,6 @@
 import styles from './Hero.module.css';
 import { useLanguage } from '../context/LanguageContext';
+import Terminal from './Terminal';
 
 const Hero = () => {
     const { t } = useLanguage();
@@ -27,6 +28,8 @@ const Hero = () => {
                         <a href="#projects" className="btn btn-primary">{t.hero.btnProjects} →</a>
                         <a href={t.hero.resumePath} target="_blank" rel="noopener noreferrer" className="btn">{t.hero.btnResume} ↗</a>
                     </div>
+
+                    <Terminal />
                 </div>
 
                 <div className={styles.side}>

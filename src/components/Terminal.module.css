@@ -1,0 +1,64 @@
+.terminal {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    max-width: 600px;
+    margin-top: 2rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--bg-raised);
+}
+
+.output {
+    max-height: 11rem;
+    overflow-y: auto;
+    padding: 0.75rem 0.9rem 0;
+    color: var(--text-secondary);
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+.cmd {
+    color: var(--text);
+    margin-top: 0.4rem;
+}
+
+.cmd:first-child {
+    margin-top: 0;
+}
+
+.line {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.6rem 0.9rem;
+}
+
+.arrow {
+    color: var(--accent);
+}
+
+.line input {
+    flex: 1;
+    min-width: 0;
+    background: none;
+    border: none;
+    outline: none;
+    color: var(--text);
+    font: inherit;
+    /* 16px min on mobile so iOS doesn't zoom on focus */
+    font-size: max(16px, 1em);
+}
+
+.line input::placeholder {
+    color: var(--text-muted);
+}
+
+.terminal:focus-within {
+    border-color: var(--accent-line);
+}
+
+@media (min-width: 861px) {
+    .line input {
+        font-size: inherit;
+    }
+}
