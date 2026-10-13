@@ -70,7 +70,7 @@ export const translations = {
             skillsTitle: "Compétences",
             skillsCategories: [
                 { name: "Audit & pentest", skills: ["Kali Linux", "nmap", "Hydra / NetExec", "Impacket", "semgrep", "gitleaks", "Wazuh (SIEM)", "OSINT"] },
-                { name: "AppSec & sécurité de l'IA", skills: ["OWASP API Top 10", "OWASP LLM Top 10", "ASVS", "MASVS", "CVSS 3.1", "RLS Postgres", "Prompt injection", "Claude Code · agents · MCP"] },
+                { name: "AppSec & sécurité de l'IA", skills: ["OWASP API Top 10", "OWASP LLM Top 10", "ASVS", "MASVS", "CVSS 3.1", "RLS Postgres", "Prompt injection", "LlamaIndex · RAG", "Claude Code · agents · MCP"] },
                 { name: "Systèmes & réseaux", skills: ["Linux / Shell", "Active Directory", "Kerberos / LDAP", "VLAN / OSPF", "Cisco Packet Tracer", "NetSim", "WatchGuard"] },
                 { name: "Méthodes & conformité", skills: ["MITRE ATT&CK", "NIST CSF", "Zero Trust", "Well-Architected (sécurité)", "RGPD", "NIS2", "PKI"] },
                 { name: "Développement", skills: ["Python", "C / C++", "Java", "JavaScript", "SwiftUI", "OCaml", "SQL", "PHP"] }
@@ -100,6 +100,22 @@ export const translations = {
                     imageSize: [1200, 839],
                     imageAlt: "Terminal : rapport d'audit de l'équipe d'agents et arbre des agents en cours d'exécution",
                     link: `${GITHUB}/ai-security-team`
+                },
+                {
+                    id: "aide-terminal",
+                    title: "aide-terminal",
+                    category: "Projet personnel · IA appliquée (RAG)",
+                    description: "Une question en français, les commandes du terminal les plus proches par le sens, 100 % en local : index vectoriel LlamaIndex sur tldr-pages, embeddings bge-m3 via Ollama, option RAG avec garde-fou contre les commandes inventées. Chaque réglage a été mesuré, puis validé sur des données jamais vues.",
+                    highlights: [
+                        "Évalué sur 2 503 questions jamais vues (NL2Bash) : 87 % en top 3 hors find, contre 27 % en BM25",
+                        "Le plus gros gain vient des données (vraies formulations), pas du changement de modèle"
+                    ],
+                    tags: ["LlamaIndex", "Ollama", "RAG", "Embeddings", "Python"],
+                    image: "/aide-terminal.webp",
+                    srcSet: "/aide-terminal-640.webp 640w, /aide-terminal.webp 1200w",
+                    imageSize: [1200, 970],
+                    imageAlt: "Schéma de construction d'aide-terminal : fonctionnement, problèmes corrigés étape par étape, résultats",
+                    link: `${GITHUB}/aide-terminal`
                 },
                 {
                     id: "homelab",
@@ -324,7 +340,7 @@ export const translations = {
             skillsTitle: "Skills",
             skillsCategories: [
                 { name: "Audit & pentest", skills: ["Kali Linux", "nmap", "Hydra / NetExec", "Impacket", "semgrep", "gitleaks", "Wazuh (SIEM)", "OSINT"] },
-                { name: "AppSec & AI security", skills: ["OWASP API Top 10", "OWASP LLM Top 10", "ASVS", "MASVS", "CVSS 3.1", "Postgres RLS", "Prompt injection", "Claude Code · agents · MCP"] },
+                { name: "AppSec & AI security", skills: ["OWASP API Top 10", "OWASP LLM Top 10", "ASVS", "MASVS", "CVSS 3.1", "Postgres RLS", "Prompt injection", "LlamaIndex · RAG", "Claude Code · agents · MCP"] },
                 { name: "Systems & networks", skills: ["Linux / Shell", "Active Directory", "Kerberos / LDAP", "VLAN / OSPF", "Cisco Packet Tracer", "NetSim", "WatchGuard"] },
                 { name: "Frameworks & compliance", skills: ["MITRE ATT&CK", "NIST CSF", "Zero Trust", "Well-Architected (security)", "GDPR", "NIS2", "PKI"] },
                 { name: "Development", skills: ["Python", "C / C++", "Java", "JavaScript", "SwiftUI", "OCaml", "SQL", "PHP"] }
@@ -354,6 +370,22 @@ export const translations = {
                     imageSize: [1200, 839],
                     imageAlt: "Terminal: the agent team's audit report and the live agent tree",
                     link: `${GITHUB}/ai-security-team`
+                },
+                {
+                    id: "aide-terminal",
+                    title: "aide-terminal",
+                    category: "Personal project · Applied AI (RAG)",
+                    description: "Ask a question in French, get the closest terminal commands by meaning, fully local: LlamaIndex vector index over tldr-pages, bge-m3 embeddings through Ollama, optional RAG with a guardrail against invented commands. Every tuning step was measured, then validated on unseen data.",
+                    highlights: [
+                        "Evaluated on 2,503 unseen questions (NL2Bash): 87% top-3 excluding find, versus 27% for BM25",
+                        "The biggest gain came from data (real phrasings), not from switching models"
+                    ],
+                    tags: ["LlamaIndex", "Ollama", "RAG", "Embeddings", "Python"],
+                    image: "/aide-terminal.webp",
+                    srcSet: "/aide-terminal-640.webp 640w, /aide-terminal.webp 1200w",
+                    imageSize: [1200, 970],
+                    imageAlt: "aide-terminal build diagram: how it works, problems fixed step by step, results",
+                    link: `${GITHUB}/aide-terminal`
                 },
                 {
                     id: "homelab",
